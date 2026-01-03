@@ -1,5 +1,5 @@
 import streamlit as st
-from APP.app import Calculator
+from app.app import Calculator
 
 # Initialize calculator
 calc = Calculator()
