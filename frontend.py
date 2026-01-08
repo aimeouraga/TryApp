@@ -11,7 +11,7 @@ st.write("A small Streamlit frontend for Calculator.")
 # Select operation
 operation = st.selectbox(
     "Choose an operation",
-    ("Add", "Subtract", "Multiply", "Divide", "Square Root")
+    ("Add", "Subtract", "Multiply", "Divide", "Modulo", "Square Root")
 )
 
 # Input fields
@@ -36,6 +36,8 @@ try:
                 result = calc.multiply(a, b)
             elif operation == "Divide":
                 result = calc.divide(a, b)
+            elif operation == "Modulo":
+                result = calc.modulo(a, b)
 
             st.success(f"Result: {result}")
 
